@@ -44,7 +44,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="font-display font-bold text-[40px] md:text-[72px] leading-[0.95] tracking-tight uppercase"
             >
-              $1200 на ИИ<br />
+              $2000 на ИИ<br />
               <span className="text-gold">за месяц</span>
             </motion.h1>
 
