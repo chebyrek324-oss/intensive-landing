@@ -5,7 +5,7 @@ import { manrope, unbounded, jetBrainsMono } from './fonts';
 export const metadata: Metadata = {
   title: 'Интенсив по заработку на ИИ в 2026',
   description:
-    'Как за месяц начать зарабатывать $2000+ на ИИ без кода, без опыта, без команды. Три урока, двадцать минут, два бонуса.',
+    'Как за месяц начать зарабатывать $2000+ на ИИ без кода, без опыта, без команды. Три урока, два бонуса.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

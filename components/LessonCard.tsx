@@ -24,9 +24,11 @@ export default function LessonCard({
           <div className="font-display font-bold text-3xl md:text-4xl leading-none text-gold">
             {no}
           </div>
-          <div className="font-mono text-[10px] md:text-[11px] tracking-[0.25em] uppercase text-paper/50 bg-ink2 border border-hair rounded-full px-3 py-1.5">
-            {duration}
-          </div>
+          {duration && (
+            <div className="font-mono text-[10px] md:text-[11px] tracking-[0.25em] uppercase text-paper/50 bg-ink2 border border-hair rounded-full px-3 py-1.5">
+              {duration}
+            </div>
+          )}
         </div>
 
         <h3 className="font-display font-bold text-2xl md:text-4xl leading-[1.05] tracking-tight uppercase mb-3">

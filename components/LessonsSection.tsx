@@ -8,7 +8,7 @@ const lessons = [
   {
     no: '01',
     title: 'Куда податься?',
-    duration: '5:36',
+    duration: '',
     description:
       'Карта рынка ИИ. Модель которая реально работает: продукт + клиенты. Реальные кейсы учеников в $.',
     videoId: 'gUiAGVr5PmdtgwdVwWiuhi',
@@ -16,7 +16,7 @@ const lessons = [
   {
     no: '02',
     title: 'Создание продукта',
-    duration: '5:51',
+    duration: '',
     description:
       'Демо вживую: сайт за 10 минут на Claude. Виджет-пассив $50-100 в месяц с каждого клиента.',
     videoId: 'b2gyqf1YRyTVoRbC4rV8UA',
@@ -24,7 +24,7 @@ const lessons = [
   {
     no: '03',
     title: 'Поиск клиентов',
-    duration: '7:59',
+    duration: '',
     description:
       'Стратегия «Снайпер». ИИ находит бизнесы без сайтов и пишет им за тебя - готовые тёплые лиды.',
     videoId: 'mFx4ReZP6WszTiFojwoEPQ',

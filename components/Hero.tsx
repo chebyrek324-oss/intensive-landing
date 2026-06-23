@@ -89,7 +89,7 @@ export default function Hero() {
               className="hidden md:grid mt-12 grid-cols-3 gap-4 md:gap-6 max-w-md"
             >
               <Stat value="3" label="Урока" />
-              <Stat value="~20" label="Минут" />
+              <Stat value="∞" label="Доступ" />
               <Stat value="2" label="Бонуса" />
             </motion.div>
           </div>
@@ -119,7 +119,7 @@ export default function Hero() {
               <Stat value="3" label="Урока" />
               <div className="relative">
                 <div className="absolute top-1/2 -translate-y-1/2 left-0 h-8 w-px bg-white/15" />
-                <Stat value="~20" label="Минут" />
+                <Stat value="∞" label="Доступ" />
                 <div className="absolute top-1/2 -translate-y-1/2 right-0 h-8 w-px bg-white/15" />
               </div>
               <Stat value="2" label="Бонуса" />
