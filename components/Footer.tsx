@@ -27,7 +27,7 @@ export default function Footer() {
             YouTube ↗
           </a>
           <a
-            href="https://t.me/+Z6nq0nSWLtRjY2Uy"
+            href="https://t.me/Mastatop"
             target="_blank"
             rel="noreferrer"
             className="hover:text-paper transition-colors"

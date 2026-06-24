@@ -54,7 +54,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.25 }}
               className="mt-6 max-w-xl font-mono text-sm md:text-base text-paper/60 leading-relaxed"
             >
-              Видео уроков интенсива. Не грузится в боте — смотри здесь.
+              Видео уроков интенсива. Не грузится в боте - смотри здесь.
               Проходи и забирай бонусы в боте.
             </motion.p>
 

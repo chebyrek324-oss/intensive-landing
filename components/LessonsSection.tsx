@@ -1,8 +1,8 @@
 'use client';
 import LessonCard from './LessonCard';
 
-// Вернуться в бота — сюда ведут все кнопки уроков
-const BOT_URL = 'https://t.me/sdasd231s_bot';
+// Вернуться в бота - сюда ведут все кнопки уроков
+const BOT_URL = 'https://t.me/Mastatop';
 
 const lessons = [
   {
@@ -44,7 +44,7 @@ export default function LessonsSection() {
             <span className="text-gold">проходи в боте</span>
           </h2>
           <p className="mt-5 font-mono text-[13px] md:text-sm leading-relaxed text-paper/60">
-            Если видео не грузится в Telegram — смотри его тут. Посмотрел —
+            Если видео не грузится в Telegram - смотри его тут. Посмотрел -
             возвращайся в бота и жми «Я посмотрел», чтобы засчитать урок и
             поднять шанс в розыгрыше.
           </p>

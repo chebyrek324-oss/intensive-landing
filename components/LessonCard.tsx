@@ -39,7 +39,7 @@ export default function LessonCard({
         </p>
       </div>
 
-      {/* Видео всегда открыто — никаких замков, прохождение в боте */}
+      {/* Видео всегда открыто - никаких замков, прохождение в боте */}
       <div className="relative aspect-video bg-ink2 border-y border-hair">
         <iframe
           src={`https://kinescope.io/embed/${videoId}`}
@@ -51,7 +51,7 @@ export default function LessonCard({
         />
       </div>
 
-      {/* Единственное действие — вернуться в бота */}
+      {/* Единственное действие - вернуться в бота */}
       <div className="p-6 md:p-8">
         <a
           href={botUrl}
@@ -61,7 +61,7 @@ export default function LessonCard({
           <span>Посмотрел? Вернись в бота</span>
         </a>
         <p className="mt-3 font-mono text-[11px] tracking-[0.2em] uppercase text-paper/40">
-          В боте жми «Я посмотрел» — урок засчитается
+          В боте жми «Я посмотрел» - урок засчитается
         </p>
       </div>
     </div>

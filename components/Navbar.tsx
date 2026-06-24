@@ -47,7 +47,7 @@ export default function Navbar() {
 
         {unlocked ? (
           <a
-            href="https://t.me/+vI0ATA1pS1o0ZjMy"
+            href="https://t.me/Mastatop"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 bg-ink2 border border-hair rounded-full px-4 py-2 font-mono text-[11px] tracking-[0.2em] uppercase hover:bg-ink3 transition-colors"

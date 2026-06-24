@@ -12,7 +12,7 @@ const MANAGER_URL =
     'Прошёл Интенсив. Хочу разбор под мою задачу. Подберём время'
   );
 
-const HUB_URL = 'https://t.me/+vI0ATA1pS1o0ZjMy';
+const HUB_URL = 'https://t.me/Mastatop';
 
 function markConverted() {
   try {
