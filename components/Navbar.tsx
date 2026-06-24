@@ -35,9 +35,6 @@ export default function Navbar() {
           <a href="#lessons" className="hover:text-paper transition-colors">
             Уроки
           </a>
-          <a href="#bonuses" className="hover:text-paper transition-colors">
-            Бонусы
-          </a>
           <a
             href="https://youtube.com/@aiBoomb"
             target="_blank"
