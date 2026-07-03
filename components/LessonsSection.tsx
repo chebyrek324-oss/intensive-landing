@@ -28,7 +28,7 @@ const lessons = [
     duration: '',
     description:
       'Демо вживую: сайт за 10 минут на Claude. Виджет-пассив $50-100 в месяц с каждого клиента.',
-    videoId: 'b2gyqf1YRyTVoRbC4rV8UA',
+    videoId: '2vhBDHWv1d5jVmjVEaqwgT',
   },
   {
     no: '03',
@@ -36,7 +36,7 @@ const lessons = [
     duration: '',
     description:
       'Стратегия «Снайпер». ИИ находит бизнесы без сайтов и пишет им за тебя - готовые тёплые лиды.',
-    videoId: 'mFx4ReZP6WszTiFojwoEPQ',
+    videoId: 'mNGeZDJecd8C2JMSJyKCvP',
   },
 ];
 
