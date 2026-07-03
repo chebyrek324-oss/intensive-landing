@@ -2,22 +2,6 @@
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
-const MANAGER_URL =
-  'https://t.me/Mastatop?text=' +
-  encodeURIComponent(
-    'Прошёл Интенсив. Хочу разбор под мою задачу. Подберём время'
-  );
-
-const CONVERTED_FLAG = 'mastodont_intensive_converted_v1';
-
-function markConverted() {
-  try {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(CONVERTED_FLAG, '1');
-    }
-  } catch {}
-}
-
 const bonuses = [
   {
     label: 'Бонус 01',
@@ -83,42 +67,6 @@ export default function BonusesSection({ unlocked }: { unlocked: boolean }) {
             </div>
           </div>
         </div>
-
-        {unlocked && (
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="mb-5 bg-gradient-to-r from-gold/15 via-gold/5 to-transparent border border-gold/30 rounded-2xl p-5 md:p-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-6"
-          >
-            <div className="flex-1 min-w-0">
-              <div className="font-mono text-[10px] md:text-[11px] tracking-[0.25em] uppercase text-gold mb-2">
-                / Готов внедрить?
-              </div>
-              <div className="font-display font-bold text-lg md:text-2xl leading-tight tracking-tight uppercase">
-                Следующий шаг -{' '}
-                <span className="text-gold">твой первый заказ</span>
-              </div>
-              <div className="font-mono text-[12px] md:text-[13px] text-paper/60 leading-relaxed mt-2 max-w-2xl">
-                Разбор за 30 минут - подберём с чего тебе начать и где быстрее
-                выйти на первые деньги.
-              </div>
-            </div>
-            <a
-              href={MANAGER_URL}
-              target="_blank"
-              rel="noreferrer"
-              onClick={markConverted}
-              className="shrink-0 inline-flex items-center justify-center gap-3 bg-gold text-ink rounded-full px-6 md:px-7 py-4 md:py-5 font-mono text-xs md:text-sm tracking-[0.2em] uppercase font-bold hover:bg-paper transition-all hover:shadow-[0_0_40px_rgba(255,209,102,0.55)]"
-            >
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
-              </svg>
-              <span>Записаться на разбор</span>
-            </a>
-          </motion.div>
-        )}
 
         <div className="grid grid-cols-12 gap-5">
           {bonuses.map((b, i) => (

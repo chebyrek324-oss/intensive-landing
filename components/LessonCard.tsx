@@ -1,4 +1,5 @@
 'use client';
+import { cn } from '@/lib/utils';
 
 type Props = {
   no: string;
@@ -7,6 +8,8 @@ type Props = {
   description: string;
   videoId: string;
   botUrl: string;
+  watched: boolean;
+  onWatch: () => void;
 };
 
 export default function LessonCard({
@@ -16,6 +19,8 @@ export default function LessonCard({
   description,
   videoId,
   botUrl,
+  watched,
+  onWatch,
 }: Props) {
   return (
     <div className="bg-card border border-hair rounded-2xl overflow-hidden">
@@ -29,6 +34,11 @@ export default function LessonCard({
               {duration}
             </div>
           )}
+          {watched && (
+            <div className="font-mono text-[10px] md:text-[11px] tracking-[0.25em] uppercase text-success bg-success/10 border border-success/40 rounded-full px-3 py-1.5 inline-flex items-center gap-1.5">
+              <span>✓</span> Посмотрел
+            </div>
+          )}
         </div>
 
         <h3 className="font-display font-bold text-2xl md:text-4xl leading-[1.05] tracking-tight uppercase mb-3">
@@ -39,7 +49,7 @@ export default function LessonCard({
         </p>
       </div>
 
-      {/* Видео всегда открыто - никаких замков, прохождение в боте */}
+      {/* Видео всегда открыто */}
       <div className="relative aspect-video bg-ink2 border-y border-hair">
         <iframe
           src={`https://kinescope.io/embed/${videoId}`}
@@ -51,18 +61,30 @@ export default function LessonCard({
         />
       </div>
 
-      {/* Единственное действие - вернуться в бота */}
-      <div className="p-6 md:p-8">
+      <div className="p-6 md:p-8 flex flex-col sm:flex-row sm:items-center gap-3">
+        <button
+          type="button"
+          onClick={onWatch}
+          disabled={watched}
+          className={cn(
+            'font-mono text-sm md:text-base tracking-[0.2em] uppercase font-bold rounded-full px-8 md:px-10 py-5 md:py-6 inline-flex items-center justify-center gap-3 transition-all',
+            watched
+              ? 'bg-success/15 border border-success/40 text-success cursor-default'
+              : 'bg-gold text-ink hover:bg-paper hover:shadow-[0_0_32px_rgba(255,209,102,0.5)]'
+          )}
+        >
+          <span>{watched ? '✓ Урок отмечен' : 'Я посмотрел урок'}</span>
+        </button>
         <a
           href={botUrl}
-          className="w-full sm:w-auto bg-gold text-ink font-mono text-sm md:text-base tracking-[0.2em] uppercase font-bold rounded-full px-8 md:px-10 py-5 md:py-6 inline-flex items-center justify-center gap-3 hover:bg-paper transition-all hover:shadow-[0_0_32px_rgba(255,209,102,0.5)]"
+          target="_blank"
+          rel="noreferrer"
+          onClick={onWatch}
+          className="font-mono text-[11px] tracking-[0.2em] uppercase text-paper/50 hover:text-paper transition-colors inline-flex items-center gap-2"
         >
-          <span>←</span>
-          <span>Посмотрел? Вернись в бота</span>
+          <span>Вернуться в бота</span>
+          <span>↗</span>
         </a>
-        <p className="mt-3 font-mono text-[11px] tracking-[0.2em] uppercase text-paper/40">
-          В боте жми «Я посмотрел» - урок засчитается
-        </p>
       </div>
     </div>
   );
