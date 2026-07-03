@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: '50 ниш без конкуренции (апрель 2026) · Бонус 01 · Mastodont',
+  title: '50 ниш без конкуренции (июль 2026) · Бонус 01 · Mastodont',
 };
 
 type Niche = {
@@ -99,7 +99,7 @@ export default function NichesBonusPage() {
         <div className="mb-14 md:mb-20">
           <div className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.25em] uppercase text-gold bg-gold/10 border border-gold/30 rounded-full px-4 py-2 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
-            Бонус 01 · Актуально на апрель 2026
+            Бонус 01 · Актуально на июль 2026
           </div>
           <h1 className="font-display font-bold text-[40px] md:text-[68px] leading-[0.95] tracking-tight uppercase mb-6">
             50 скучных ниш<br />
@@ -108,7 +108,7 @@ export default function NichesBonusPage() {
           <p className="font-mono text-sm md:text-base text-paper/60 leading-relaxed max-w-2xl">
             Готовый список ниш, где компании либо без сайтов, либо с сайтами 2008 года.
             Средний чек за сайт $300-1000, срок работы от вечера до 4 дней. Данные
-            собраны на апрель 2026 по рынку СНГ.
+            собраны на июль 2026 по рынку СНГ.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -233,7 +233,7 @@ export default function NichesBonusPage() {
         </div>
 
         <div className="mt-14 text-center font-mono text-[11px] tracking-[0.25em] uppercase text-paper/40">
-          AI Мастодонт · Intensive Vol. 01 · Bonus 01 · April 2026
+          AI Мастодонт · Intensive Vol. 01 · Bonus 01 · July 2026
         </div>
       </div>
     </main>

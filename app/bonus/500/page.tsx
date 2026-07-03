@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Первые $500 за 7 дней (апрель 2026) · Бонус 02 · Mastodont',
+  title: 'Первые $500 за 7 дней (июль 2026) · Бонус 02 · Mastodont',
 };
 
 type Day = {
@@ -33,7 +33,7 @@ const days: Day[] = [
         ],
       },
       {
-        heading: 'Инструменты проверки спроса (актуально апрель 2026)',
+        heading: 'Инструменты проверки спроса (актуально июль 2026)',
         bullets: [
           'Яндекс.Вордстат (wordstat.yandex.ru) - бесплатно. Если 500+ запросов в месяц по "услуга + город" - рынок живой',
           'Google Trends - работает в РФ без VPN. Проверка сезонности',
@@ -56,11 +56,11 @@ const days: Day[] = [
     time: '3-4 часа',
     blocks: [
       {
-        heading: 'AntiGravity (статус на апрель 2026)',
+        heading: 'AntiGravity (статус на июль 2026)',
         bullets: [
-          'Public preview от Google, бесплатно для физлиц (Win/Mac/Linux)',
-          'Работает на топовых моделях апреля 2026: Gemini 3.1 Pro, Claude Opus 4.7, Claude Sonnet 4.6, GPT-5',
-          'Последнее обновление 1.20.3 (март 2026): Linux-сэндбокс, улучшенная MCP-авторизация',
+          'Вышел из preview: Antigravity CLI доступен всем, Google перевёл на него весь Gemini CLI (июнь 2026)',
+          'Работает на топовых моделях июля 2026: Gemini 3.5 Flash (в 4 раза быстрее, обходит 3.1 Pro), Claude Opus 4.8, GPT-5',
+          'Обновления июня 2026: мультиагентные фоновые задачи, встроенный Guide-скилл, умный поиск по файлам',
           'Интеграция с Google AI Studio + Firebase: база данных, авторизация, уведомления из коробки',
           'Из РФ доступ через VPN. В КЗ, Беларуси, Узбекистане работает напрямую',
         ],
@@ -70,7 +70,7 @@ const days: Day[] = [
         bullets: [
           'Ставь задачу как тимлид, не как пользователь. Вместо "сделай сайт" - "создай одностраничный сайт для компании X, цели: заявки и звонки, структура: hero, 3 преимущества, калькулятор, портфолио из 6 объектов, FAQ из 8 вопросов, форма, футер"',
           'Используй Planning Mode: AntiGravity сначала показывает план, подтверждаешь и только потом пишет код',
-          'Вставляй скриншот референсного сайта и пиши "сделай в таком визуальном языке под мою нишу" - Gemini 3.1 Pro и Opus 4.7 отлично читают референсы',
+          'Вставляй скриншот референсного сайта и пиши "сделай в таком визуальном языке под мою нишу" - Gemini 3.5 Flash и Opus 4.8 отлично читают референсы',
           'Требуй mobile-first, lazy loading, SEO-теги title/description под конкретный поисковый запрос',
         ],
       },
@@ -98,7 +98,7 @@ const days: Day[] = [
     time: '2 часа',
     blocks: [
       {
-        heading: 'Где искать (по эффективности, апрель 2026)',
+        heading: 'Где искать (по эффективности, июль 2026)',
         bullets: [
           '2ГИС - лучший для СНГ. В карточке компании поле "сайт", часто пустое. Контакты (телефон, email) публичны',
           'Яндекс.Карты - вторая лучшая опция для РФ, особенно малые города',
@@ -151,14 +151,14 @@ const days: Day[] = [
       {
         heading: 'Статистика холодного outreach (2026)',
         bullets: [
-          'Средний open rate B2B email: 44%, топ-кампании 65%+ (Smartlead)',
-          'Средний reply rate: 3,43% по индустрии. Топ-перформеры 10%+',
-          'Хорошая reply rate: 5-10%. Элитная: 15%+',
-          'Open rate из-за Apple Mail Privacy стала неточной, фокус на reply rate',
+          'Средний open rate B2B email: ~28%, но метрика неточная из-за Apple Mail Privacy - смотри на ответы',
+          'Средний reply rate: 3,4% по индустрии (Instantly, июль 2026). Топ-10% кампаний дают 10%+',
+          'Хорошая reply rate: 5-8%. Малые кампании до 50 адресов дают 5,8% против 2,1% у массовых на 500+',
+          'Проверенный список email даёт x2 ответов против непроверенного - чисти базу перед отправкой',
         ],
       },
       {
-        heading: 'Cold Email (сервисы апрель 2026)',
+        heading: 'Cold Email (сервисы июль 2026)',
         bullets: [
           'Instantly.ai - лидер 2026, продвинутый warmup, от $37/мес',
           'Smartlead.ai - сильная аналитика, от $39/мес',
@@ -296,7 +296,7 @@ export default function PlanBonusPage() {
         <div className="mb-14 md:mb-20">
           <div className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.25em] uppercase text-gold bg-gold/10 border border-gold/30 rounded-full px-4 py-2 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
-            Бонус 02 · Актуально на апрель 2026
+            Бонус 02 · Актуально на июль 2026
           </div>
           <h1 className="font-display font-bold text-[40px] md:text-[68px] leading-[0.95] tracking-tight uppercase mb-6">
             Первые $500<br />
@@ -304,7 +304,7 @@ export default function PlanBonusPage() {
           </h1>
           <p className="font-mono text-sm md:text-base text-paper/60 leading-relaxed max-w-2xl">
             Пошаговый план с актуальными инструментами, шаблонами писем, скриптами
-            звонков и реальной математикой конверсий на апрель 2026. Ниша + сайт +
+            звонков и реальной математикой конверсий на июль 2026. Ниша + сайт +
             10 писем + 20 звонков = 1 сделка $500-700.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -327,8 +327,8 @@ export default function PlanBonusPage() {
             <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">Дней до первых $500</div>
           </div>
           <div className="bg-card border border-hair rounded-2xl p-5">
-            <div className="font-display font-bold text-3xl md:text-4xl text-gold leading-none mb-2">44%</div>
-            <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">Средний open rate cold email 2026</div>
+            <div className="font-display font-bold text-3xl md:text-4xl text-gold leading-none mb-2">5,8%</div>
+            <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">Reply rate малых кампаний до 50 адресов</div>
           </div>
           <div className="bg-card border border-hair rounded-2xl p-5">
             <div className="font-display font-bold text-3xl md:text-4xl text-gold leading-none mb-2">3-5%</div>
@@ -446,7 +446,7 @@ export default function PlanBonusPage() {
         </div>
 
         <div className="mt-14 text-center font-mono text-[11px] tracking-[0.25em] uppercase text-paper/40">
-          AI Мастодонт · Intensive Vol. 01 · Bonus 02 · April 2026
+          AI Мастодонт · Intensive Vol. 01 · Bonus 02 · July 2026
         </div>
       </div>
     </main>
