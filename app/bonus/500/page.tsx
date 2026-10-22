@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Первые $500 за 7 дней (июль 2026) · Бонус 02 · Mastodont',
+  title: 'Первые $500 за 7 дней · Бонус 02 · Mastodont',
 };
 
 type Day = {
@@ -33,7 +33,7 @@ const days: Day[] = [
         ],
       },
       {
-        heading: 'Инструменты проверки спроса (актуально июль 2026)',
+        heading: 'Инструменты проверки спроса',
         bullets: [
           'Яндекс.Вордстат (wordstat.yandex.ru) - бесплатно. Если 500+ запросов в месяц по "услуга + город" - рынок живой',
           'Google Trends - бесплатная проверка сезонности спроса',
@@ -56,33 +56,33 @@ const days: Day[] = [
     time: '3-4 часа',
     blocks: [
       {
-        heading: 'Claude - основной инструмент (июль 2026)',
+        heading: 'Claude - основной инструмент',
         bullets: [
-          'Claude Opus 4.8 - сильнейшая модель для сайтов и кода на июль 2026: понимает задачу с одного промпта и выдаёт готовый результат',
-          'Claude Code - агент в терминале: сам создаёт файлы, правит код, деплоит. Один промпт - готовый сайт в интернете',
+          'Claude Opus 5.5 - флагман Anthropic для кода и сайтов: понимает задачу с одного промпта и выдаёт готовый результат',
+          'Claude Code - агент для кода: работает в терминале, в редакторе и в приложении Claude. Сам создаёт файлы, правит код, деплоит. Один промпт - готовый сайт в интернете',
           'Понимает русский язык идеально - промпты пишешь как обычное ТЗ',
           'Скиллы и артефакты: один раз настроил шаблон продающего сайта - дальше штампуешь под каждую нишу за минуты',
           'Мы работаем на всех инструментах, но основной - Claude: стабильнее всего для продакшн-сайтов',
         ],
       },
       {
-        heading: 'Лучшие промпты 2026',
+        heading: 'Промпты, которые работают',
         bullets: [
           'Ставь задачу как тимлид, не как пользователь. Вместо "сделай сайт" - "создай одностраничный сайт для компании X, цели: заявки и звонки, структура: hero, 3 преимущества, калькулятор, портфолио из 6 объектов, FAQ из 8 вопросов, форма, футер"',
           'Попроси Claude сначала показать план сайта, подтверди - и только потом пусть пишет код: меньше переделок',
-          'Вставляй скриншот референсного сайта и пиши "сделай в таком визуальном языке под мою нишу" - Gemini 3.5 Flash и Opus 4.8 отлично читают референсы',
+          'Вставляй скриншот референсного сайта и пиши "сделай в таком визуальном языке под мою нишу" - Claude понимает скриншоты и переносит стиль',
           'Требуй mobile-first, lazy loading, SEO-теги title/description под конкретный поисковый запрос',
         ],
       },
       {
         heading: 'Альтернативы (тоже рабочие)',
         bullets: [
-          'AntiGravity (Google) - вышел из preview в июне 2026, мультиагентные задачи',
-          'Codex (OpenAI) - агент для кода на GPT-5, аналог Claude Code',
+          'Antigravity 2.0 (Google) - несколько агентов работают параллельно, для разработчиков бесплатно',
+          'Codex (OpenAI) - агент для кода на GPT-6, аналог Claude Code',
           'Cursor - AI-редактор кода, работает с любыми моделями',
           'Lovable (lovable.dev) - full-stack вибкодинг, React + Supabase, GitHub-экспорт',
           'Bolt.new - быстрый прототип в браузере, zero setup',
-          'v0.dev от Vercel - красивые Next.js + shadcn/ui',
+          'v0 (v0.app) от Vercel - собирает красивые приложения на Next.js',
         ],
       },
     ],
@@ -100,7 +100,7 @@ const days: Day[] = [
     time: '2 часа',
     blocks: [
       {
-        heading: 'Где искать (по эффективности, июль 2026)',
+        heading: 'Где искать (по эффективности)',
         bullets: [
           '2ГИС - лучший для СНГ. В карточке компании поле "сайт", часто пустое. Контакты (телефон, email) публичны',
           'Яндекс.Карты - вторая лучшая опция для РФ, особенно малые города',
@@ -133,27 +133,27 @@ const days: Day[] = [
     time: '3-5 часов активной работы',
     blocks: [
       {
-        heading: 'Статистика холодного outreach (2026)',
+        heading: 'Статистика холодных рассылок',
         bullets: [
-          'Средний open rate B2B email: ~28%, но метрика неточная из-за Apple Mail Privacy - смотри на ответы',
-          'Средний reply rate: 3,4% по индустрии (Instantly, июль 2026). Топ-10% кампаний дают 10%+',
-          'Хорошая reply rate: 5-8%. Малые кампании до 50 адресов дают 5,8% против 2,1% у массовых на 500+',
-          'Проверенный список email даёт x2 ответов против непроверенного - чисти базу перед отправкой',
+          'Открываемость писем не смотри: из-за защиты приватности в Apple Mail она неточная. Смотри на ответы',
+          'Средний процент ответов - 3,4% (отчёт Instantly по рассылкам 2025 года). Топ-10% кампаний дают 10,7% и выше',
+          'Хороший результат - от 5,5% ответов: так работают топ-25% кампаний (Instantly)',
+          'Проверяй адреса перед отправкой: несуществующие ящики портят репутацию домена, и письма уходят в спам',
         ],
       },
       {
-        heading: 'Cold Email (сервисы июль 2026)',
+        heading: 'Сервисы холодных рассылок',
         bullets: [
-          'Instantly.ai - лидер 2026, продвинутый warmup, от $37/мес',
-          'Smartlead.ai - сильная аналитика, от $39/мес',
-          'Lemlist - персонализация, от $59/мес',
-          'Snov.io - поиск email + отправка, от $39/мес',
+          'Instantly.ai - прогрев ящиков и рассылки, от $47/мес (от $37,6 при оплате за год)',
+          'Smartlead.ai - сильная аналитика, от $39/мес (от $32 при оплате за год)',
+          'Lemlist - персонализация, от $69/мес',
+          'Snov.io - поиск email + отправка, от $39/мес, есть бесплатный тариф',
           'DashaMail - русскоязычный сервис рассылок для тёплой базы',
-          'Coldy.ai - русскоязычный под холодные рассылки, 2026',
+          'Coldy.ai - русскоязычный сервис холодных рассылок с прогревом ящиков, бесплатный старт',
         ],
       },
       {
-        heading: 'Шаблон письма, который работает в 2026',
+        heading: 'Шаблон письма',
         bullets: [
           'Тема: "сайт для [название компании]"',
           'Первый абзац: "Я зашёл в 2ГИС искать [услугу] в [город] и заметил, что у вас нет сайта. При этом отзывы 4.8 из 5 - значит клиенты довольны"',
@@ -181,10 +181,10 @@ const days: Day[] = [
         ],
       },
     ],
-    math: 'Ожидаемая математика дня: 100 cold email (с warmup и персонализацией) → 8-12 ответов; 20 звонков → 10 разговоров → 3-5 заинтересованных; 30 Telegram DM → 10-15 ответов.',
+    math: 'Ожидаемая математика дня: 100 писем (с прогревом ящика и персонализацией) → 3-10 ответов; 20 звонков → 10 разговоров → 3-5 заинтересованных; 30 Telegram DM → 10-15 ответов.',
     errors: [
       'Слать с Gmail без прогрева домена - письма в спам',
-      'Не персонализировать - AI-детекторы почтовых клиентов в 2026 банят шаблоны',
+      'Не персонализировать - почтовые фильтры режут одинаковые шаблонные письма',
       'Слать 500 писем в день с нового ящика - блокировка за сутки',
     ],
   },
@@ -204,17 +204,17 @@ const days: Day[] = [
         ],
       },
       {
-        heading: 'Типичные возражения 2026 и ответы',
+        heading: 'Типичные возражения и ответы',
         bullets: [
           '"У нас уже есть сайт на Tilda" → "Покажу чем мой вариант лучше. Если не впечатлит - не возьму ни копейки. 10 минут?"',
           '"Сейчас не сезон" → "Понимаю. Давайте сделаем сейчас - оплатите через месяц, когда будут деньги. Мне нужен кейс в портфолио"',
           '"Присылайте КП на email" → "КП скучно. Я уже сделал живое демо - вот ссылка. Посмотрите 2 минуты, потом решим"',
           '"Надо подумать" → "Конечно. Что именно сомневает? Цена, сроки, доверие? Разберём за 5 минут"',
-          '"Я думал сайт стоит 100К рублей" → "Раньше так было. С AI-инструментами 2026 я делаю за 3 дня то, что студия делает 2 месяца. $500 - это моё время, не код"',
+          '"Я думал сайт стоит 100К рублей" → "Раньше так было. С нейросетями я делаю за 3 дня то, что студия делает 2 месяца. $500 - это моё время, не код"',
         ],
       },
     ],
-    math: 'Реальная конверсия: 100 писем → 44 открытия → 3-5 ответов → 1-3 встречи → 0.5-1 продажа. 20 звонков → 3-5 заинтересованных → 1-2 встречи → 1 продажа. 30 DM → 10-15 ответов → 3-5 встреч → 1-2 продажи.',
+    math: 'Реальная конверсия: 100 писем → 3-5 ответов → 1-3 встречи → 0.5-1 продажа. 20 звонков → 3-5 заинтересованных → 1-2 встречи → 1 продажа. 30 DM → 10-15 ответов → 3-5 встреч → 1-2 продажи.',
     errors: [
       'Давить на клиента сразу после ответа - сольёт',
       'Не фиксировать встречу в календаре - забудет',
@@ -274,21 +274,21 @@ export default function PlanBonusPage() {
           href="/"
           className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.25em] uppercase text-paper/60 hover:text-paper transition-colors mb-10"
         >
-          <span>←</span> Вернуться в Intensive
+          <span>←</span> Вернуться к урокам
         </Link>
 
         <div className="mb-14 md:mb-20">
           <div className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.25em] uppercase text-gold bg-gold/10 border border-gold/30 rounded-full px-4 py-2 mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
-            Бонус 02 · Актуально на июль 2026
+            Бонус 02
           </div>
           <h1 className="font-display font-bold text-[40px] md:text-[68px] leading-[0.95] tracking-tight uppercase mb-6">
             Первые $500<br />
             <span className="text-gold">за 7 дней</span>
           </h1>
           <p className="font-mono text-sm md:text-base text-paper/60 leading-relaxed max-w-2xl">
-            Пошаговый план с актуальными инструментами, шаблонами писем, скриптами
-            звонков и реальной математикой конверсий на июль 2026. Ниша + сайт +
+            Пошаговый план с инструментами, шаблонами писем, скриптами
+            звонков и реальной математикой конверсий. Ниша + сайт +
             10 писем + 20 звонков = 1 сделка $500-700.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -311,12 +311,12 @@ export default function PlanBonusPage() {
             <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">Дней до первых $500</div>
           </div>
           <div className="bg-card border border-hair rounded-2xl p-5">
-            <div className="font-display font-bold text-3xl md:text-4xl text-gold leading-none mb-2">5,8%</div>
-            <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">Reply rate малых кампаний до 50 адресов</div>
+            <div className="font-display font-bold text-3xl md:text-4xl text-gold leading-none mb-2">10,7%</div>
+            <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">Ответов у топ-10% рассылок</div>
           </div>
           <div className="bg-card border border-hair rounded-2xl p-5">
-            <div className="font-display font-bold text-3xl md:text-4xl text-gold leading-none mb-2">3-5%</div>
-            <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">Средняя reply rate B2B</div>
+            <div className="font-display font-bold text-3xl md:text-4xl text-gold leading-none mb-2">3,4%</div>
+            <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-paper/60">Средний процент ответов</div>
           </div>
           <div className="bg-card border border-hair rounded-2xl p-5">
             <div className="font-display font-bold text-3xl md:text-4xl text-gold leading-none mb-2">$500-700</div>
@@ -403,20 +403,19 @@ export default function PlanBonusPage() {
           </div>
           <h2 className="font-display font-bold text-2xl md:text-4xl leading-tight tracking-tight uppercase mb-5">
             Этого достаточно для старта.<br />
-            <span className="text-gold">Полная система - в Рокфеллере.</span>
+            <span className="text-gold">Ещё подарок - за почту.</span>
           </h2>
           <p className="font-mono text-sm text-paper/60 max-w-xl mx-auto mb-6">
-            Софт для поиска клиентов, авторские промпты, скрипты продаж, виджеты для
-            пассивного дохода и прямое сопровождение Матвея.
+            Карта заработка на ИИ: за что платят, кто платит, путь от нуля до первых денег и 10 бесплатных инструментов.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
             <a
-              href="https://t.me/Mastatop?text=%D0%9F%D1%80%D0%BE%D1%88%D1%91%D0%BB%20%D0%B3%D0%B0%D0%B9%D0%B4.%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%20%D0%BF%D0%BE%D0%B4%20%D0%BC%D0%BE%D1%8E%20%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D1%8E"
+              href="https://t.me/mastodont_aibot?start=gift"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-gold text-ink rounded-full px-6 py-4 font-mono text-xs tracking-[0.2em] uppercase font-semibold hover:bg-paper transition-colors"
             >
-              <span>Хочу разбор</span>
+              <span>Подарок за почту</span>
               <span>→</span>
             </a>
             <Link
@@ -430,7 +429,7 @@ export default function PlanBonusPage() {
         </div>
 
         <div className="mt-14 text-center font-mono text-[11px] tracking-[0.25em] uppercase text-paper/40">
-          AI Мастодонт · Intensive Vol. 01 · Bonus 02 · July 2026
+          AI Мастодонт · Бонус 02
         </div>
       </div>
     </main>

@@ -54,8 +54,8 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.25 }}
               className="mt-6 max-w-xl font-mono text-sm md:text-base text-paper/60 leading-relaxed"
             >
-              Видео уроков интенсива. Не грузится в боте - смотри здесь.
-              Проходи и забирай бонусы в боте.
+              Три коротких урока видео-гайда. Не грузится в боте - смотри здесь.
+              Проходи и забирай бонусы.
             </motion.p>
 
             <motion.div
@@ -77,7 +77,7 @@ export default function Hero() {
                 href="#lessons"
                 className="group inline-flex items-center gap-3 bg-ink2 border border-hair text-paper rounded-full px-6 py-4 font-mono text-xs md:text-sm tracking-[0.2em] uppercase hover:bg-ink3 transition-colors"
               >
-                <span>Программа</span>
+                <span>Уроки</span>
                 <span>↓</span>
               </a>
             </motion.div>

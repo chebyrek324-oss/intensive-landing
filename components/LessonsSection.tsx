@@ -11,7 +11,7 @@ import {
 } from '@/lib/progress';
 
 // Вернуться в бота - сюда ведёт вторичная ссылка уроков
-const BOT_URL = 'https://t.me/Mastatop';
+const BOT_URL = 'https://t.me/mastodont_aibot';
 
 const lessons = [
   {
@@ -84,8 +84,7 @@ export default function LessonsSection() {
               <span className="text-gold">забирай подарки</span>
             </h2>
             <p className="mt-5 font-mono text-[13px] md:text-sm leading-relaxed text-paper/60">
-              Посмотри все 3 урока и отметь каждый - откроются два подарка и
-              запись на личный разбор. Если видео не грузится в боте - смотри
+              Посмотри все 3 урока и отметь каждый - откроются два подарка. Если видео не грузится в боте - смотри
               его здесь.
             </p>
 
@@ -120,7 +119,7 @@ export default function LessonsSection() {
       </section>
 
       <BonusesSection unlocked={hydrated && allWatched} />
-      <BookingSection unlocked={hydrated && allWatched} />
+      <BookingSection />
     </>
   );
 }

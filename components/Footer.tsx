@@ -13,7 +13,7 @@ export default function Footer() {
               Mastodont
             </div>
             <div className="font-mono text-[10px] tracking-[0.25em] uppercase text-paper/50 mt-0.5">
-              © 2026 · Intensive Vol. 01
+              Видео-гайд · 3 урока
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Footer() {
             YouTube ↗
           </a>
           <a
-            href="https://t.me/Mastatop"
+            href="https://t.me/mastodont_aibot"
             target="_blank"
             rel="noreferrer"
             className="hover:text-paper transition-colors"

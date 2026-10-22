@@ -3,7 +3,7 @@ import './globals.css';
 import { manrope, unbounded, jetBrainsMono } from './fonts';
 
 export const metadata: Metadata = {
-  title: 'Интенсив по заработку на ИИ в 2026',
+  title: 'Видео-гайд: первые деньги на ИИ · Мастодонт',
   description:
     'Как за месяц начать зарабатывать $2000+ на ИИ без кода, без опыта, без команды. Три урока, два бонуса.',
 };
